@@ -1,0 +1,18 @@
+<h2>General News</h2>
+<div class="news" *ngFor="let item of newsData">
+    <a href={{item.url}}>
+        <div class="news__flex">
+            <div class="news__flex-img">
+                <img src={{item.urlToImage}} alt="">
+            </div>
+            <div class="news__flex-content">
+                <div class="news__flex-content-title">
+                    <h4>{{item.title}}</h4>
+                </div>
+                <div class="news__flex-content-description">
+                    <p>{{item.content}}</p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
